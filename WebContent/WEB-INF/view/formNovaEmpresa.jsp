@@ -8,9 +8,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="<c:url value="/novaEmpresa"/>" method="post">
+	<form action="<c:url value="/orquestrador"/>" method="post">
 		Nome: <input type="text" name="nome" />
 		Data Abertura: <input type="text" name="data" />
+		<input type="hidden" name="acao" value="NovaEmpresa">
 		 <input type="submit" />
 	</form>
 </body>
