@@ -9,12 +9,14 @@
 <title>Insert title here</title>
 </head>
 <body>
+	<c:import url="logout.jsp" />
 	<form action="<c:url value="/orquestrador"/>" method="post">
-		Nome: <input type="text" name="nome" value="${empresa.nome}"/>
-		Data Abertura: <input type="text" name="data" value="<fmt:formatDate value="${empresa.dataAbertura}" pattern="dd/MM/yyyy"/>"/>
-		<input type="hidden" name="id" value="${empresa.id}">
-		<input type="hidden" name="acao" value="AlteraEmpresa">
-		 <input type="submit" />
+		Nome: <input type="text" name="nome" value="${empresa.nome}" /> Data
+		Abertura: <input type="text" name="data"
+			value="<fmt:formatDate value="${empresa.dataAbertura}" pattern="dd/MM/yyyy"/>" />
+		<input type="hidden" name="id" value="${empresa.id}"> <input
+			type="hidden" name="acao" value="AlteraEmpresa"> <input
+			type="submit" />
 	</form>
 </body>
 </html>

@@ -11,6 +11,10 @@
 <title>Insert title here</title>
 </head>
 <body>
+	<c:import url="logout.jsp"/>
+	Usuario logado: ${usuarioLogado.login}
+	<br>
+	<br>
 	<c:if test="${not empty empresa}">
 	Empresa 
 	${empresa}
