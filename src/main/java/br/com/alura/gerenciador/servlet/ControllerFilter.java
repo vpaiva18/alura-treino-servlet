@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import br.com.alura.gerenciador.controller.Acao;
 
-//@WebFilter("/orquestrador")
+@WebFilter("/orquestrador")
 public class ControllerFilter extends HttpFilter implements Filter {
 
 	public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain chain)

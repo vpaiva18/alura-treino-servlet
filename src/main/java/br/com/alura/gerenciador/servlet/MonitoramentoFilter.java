@@ -10,7 +10,7 @@ import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpFilter;
 
-//@WebFilter("/orquestrador")
+@WebFilter("/orquestrador")
 public class MonitoramentoFilter extends HttpFilter implements Filter {
 
 	@Override
